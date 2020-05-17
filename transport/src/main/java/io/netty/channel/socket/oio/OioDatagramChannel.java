@@ -54,7 +54,9 @@ import java.util.Locale;
  *
  * @see AddressedEnvelope
  * @see DatagramPacket
+ * @deprecated use NIO / EPOLL / KQUEUE transport.
  */
+@Deprecated
 public class OioDatagramChannel extends AbstractOioMessageChannel
                                 implements DatagramChannel {
 
@@ -121,7 +123,7 @@ public class OioDatagramChannel extends AbstractOioMessageChannel
     /**
      * {@inheritDoc}
      *
-     * This can be safetly cast to {@link OioDatagramChannelConfig}.
+     * This can be safely cast to {@link OioDatagramChannelConfig}.
      */
     @Override
     // TODO: Change return type to OioDatagramChannelConfig in next major release
